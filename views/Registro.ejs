@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/Registro.css">
+<script>
+    function validarRegistro() {
+            var nombre = document.getElementById('nombre').value.trim();
+            var apellido = document.getElementById('apellido').value.trim();
+            var correo = document.getElementById('correo').value.trim();
+            var telefono = document.getElementById('telefono').value.trim();
+            var mensaje = document.getElementById('mensaje').value.trim();
+
+            if (nombre === '' || apellido === '' || correo === '' || telefono === '' || mensaje === '') {
+                alert('Por favor, completa todos los campos.');
+                return false;
+            }
+            return true;
+        }
+</script>
+<title>Inicia sesión</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- Páginas relacionadas -->
+            <li><a href="Home">Inicio</a></li>
+            <li><a href="Biografia">Biografía</a></li>
+            <li><a href="Obras">Trabajos selectos</a></li>
+            <li><a href="Registro">Inicia sesión</a></li>
+        </ul>
+    </nav>
+    <h2>Inicia sesión</h2>
+
+    <form action="#" method="POST" onsubmit="return validarRegistro()">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo"><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Formato: 123-456-7890"><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

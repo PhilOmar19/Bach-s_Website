@@ -1,0 +1,64 @@
+body {
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 217, 226);
+}
+
+.Contenedor p{
+    margin-bottom: 5%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(107, 11, 11);
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #da7e7e;
+}
+
+#Bienvenida {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#Bienvenida h1 {
+    color: #333;
+    flex: 100%;
+    text-align: center;
+}
+
+#images {
+    display: flex;
+}
+
+#images img {
+    width: 100%;
+    border-radius: 2%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#Bienvenida #texto {
+    width: 60%;
+    margin-right: 5%;
+    text-align: justify;
+}
